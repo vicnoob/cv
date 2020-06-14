@@ -120,3 +120,16 @@ a:hover {
 @media only screen and (max-width: 767px) {
 	
 }
+
+.exp_label {
+	text-align:justify;
+	font-weight:600;
+}
+
+.font_M {
+	font-size: 1.5em;
+}
+
+.margin_top_S {
+	margin-top: 0.5rem;
+}
