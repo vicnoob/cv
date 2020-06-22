@@ -1,129 +1,133 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300italic,300,100,100italic,400italic,700,700italic,900,900italic);
-
-
 body {
 	line-height: 1;
 }
+
+p {
+	line-height: 1.5;
+}
+
 ol, ul {
 	list-style: none;
 }
+
 :focus {
 	outline: 0;
 }
+
 a:focus {
 	outline: 0;
 	text-decoration: none;
 }
-body{
+
+body {
 	font-family: 'Lato', sans-serif;
 }
+
 a {
-	text-decoration:none;
-}
-a:hover {
-	text-decoration:none;
+	text-decoration: none;
 }
 
-.wraper{
-	width:100%;
-	margin:50px auto;
+a:hover {
+	text-decoration: none;
+}
+
+.wraper {
+	width: 100%;
+	margin: 50px auto;
 	margin-left: 10%;
 }
 
-.wraper:before,
-.wraper:after {
-  display: table;
-  content: " ";
+.wraper:before, .wraper:after {
+	display: table;
+	content: " ";
 }
 
-.wraper:after{
-  clear: both;
+.wraper:after {
+	clear: both;
 }
 
 /* Skills Style 6 */
 
-.skillst6{
-	width:90%;
-	color:#fff;
-
+.skillst6 {
+	width: 90%;
+	color: #fff;
 }
-.skillst6 .skillbar{
+
+.skillst6 .skillbar {
 	width: 90%;
 	height: 40px;
-	position:relative;
-	margin-bottom:30px;
+	position: relative;
+	margin-bottom: 30px;
 }
-.skillst6 .count-bar{
+
+.skillst6 .count-bar {
 	height: 100%;
-	width:0px;
-	position:relative;
+	width: 0px;
+	position: relative;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
-.skillst6 .count-bar.color-1{
+
+.skillst6 .count-bar.color-1 {
 	background-color: #338ae7;
-
 }
-.skillst6 .count-bar.color-2{
+
+.skillst6 .count-bar.color-2 {
 	background-color: #fe871f;
-
 }
-.skillst6 .count-bar.color-3{
+
+.skillst6 .count-bar.color-3 {
 	background-color: #bd5cb9;
-
 }
-.skillst6 .count-bar.color-4{
+
+.skillst6 .count-bar.color-4 {
 	background-color: #2d7da5;
-
 }
-.skillst6 .count-bar.color-5{
+
+.skillst6 .count-bar.color-5 {
 	background-color: #18BC9C;
-
 }
-.skillst6 .count-bar.color-6{
+
+.skillst6 .count-bar.color-6 {
 	background-color: #E0CD69;
-
 }
-.skillst6 .count-bar.color-7{
+
+.skillst6 .count-bar.color-7 {
 	background-color: #519BFF;
-
 }
-.skillst6 .count-bar.color-8{
+
+.skillst6 .count-bar.color-8 {
 	background-color: #FCCF25;
-
 }
 
-
-.skillst6 .title{
-	font-size:14px;
-	font-weight:400;
-	padding-left:12px;
-	line-height:40px;
-	text-transform:uppercase;
+.skillst6 .title {
+	font-size: 14px;
+	font-weight: 400;
+	padding-left: 12px;
+	line-height: 40px;
+	text-transform: uppercase;
 }
-.skillst6 .count{
-	position:absolute;
-	top:0;
-	right:12px;
-	line-height:40px;
-	font-size:14px;
-	font-weight:400;
+
+.skillst6 .count {
+	position: absolute;
+	top: 0;
+	right: 12px;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 /*Coustom Media Query Css*/
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	
-}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
 
-@media only screen and (max-width: 767px) {
-	
-}
+@media only screen and (max-width: 767px) {}
 
 .exp_label {
-	text-align:justify;
-	font-weight:600;
+	text-align: justify;
+	font-weight: 600;
 }
 
 .font_M {
@@ -132,4 +136,176 @@ a:hover {
 
 .margin_top_S {
 	margin-top: 0.5rem;
+}
+
+.popup-img {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg:hover {
+	/* opacity: 0.7; */
+}
+
+/* The Modal (background) */
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 9999;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.9);
+	/* Black w/ opacity */
+	overflow: hidden;
+}
+
+/* Modal Content (image) */
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	top: 100px;
+}
+
+/* Caption of Modal Image */
+
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+/* Add Animation */
+
+.modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(0)
+	}
+	to {
+		-webkit-transform: scale(1)
+	}
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(1)
+	}
+}
+
+/* The Close Button */
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}
+
+img.modal-content {
+	max-height: 80%;
+	width: auto;
+}
+
+.scroll-block {
+	overflow: hidden;
+}
+
+.award-text {
+	color: #F05F40;
+}
+
+.margin_top_L {
+	margin-top: 20px;
+}
+
+.color_black {
+	color: black;
+}
+
+.color_red {
+	color: #DD4B39
+}
+
+.color_blue {
+	color: #3B5998
+}
+
+.d_inline_block {
+	display: inline-block;
+}
+
+.hr_style_1 {
+	margin-left: 0px;
+	max-width: 300px;
+	border: solid 1px;
+}
+
+.hr_style_2 {
+	max-width: 50%;
+	border-color: #80B5E9;
+}
+
+.margin_top_100 {
+	margin-top: -100px;
+}
+
+.intro-text .name {
+	font-size: 30px;
+	color: white;
+}
+
+.exp_date {
+	text-align: justify;
+	margin-top: 10px;
+}
+
+.font_big {
+	font-size: 2em;
 }
