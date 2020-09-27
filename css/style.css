@@ -26,8 +26,9 @@ a:hover {
 
 .wraper{
 	width:100%;
-	margin:50px auto;
-	margin-left: 10%;
+	/* margin:50px auto; */
+	/* margin-left: 10%; */
+	padding-left: 50px;
 }
 
 .wraper:before,
@@ -43,7 +44,7 @@ a:hover {
 /* Skills Style 6 */
 
 .skillst6{
-	width:90%;
+	/* width:90%; */
 	color:#fff;
 
 }
@@ -132,4 +133,12 @@ a:hover {
 
 .margin_top_S {
 	margin-top: 0.5rem;
+}
+
+.d_flex {
+	display: flex;
+}
+
+.justify_center {
+	justify-content: center;
 }
